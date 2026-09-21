@@ -12,11 +12,10 @@ export function UnitCard({
   onEditUnit 
 }) {
   const isPaid = unit.status === 'paid';
-  const isPartial = unit.status === 'partial' || (unit.paidAmount > 0 && unit.pendingBalance > 0);
+  const paidAmount = Number(unit.paidAmount) || 0;
+  const pendingAmount = unit.pendingBalance !== undefined ? Number(unit.pendingBalance) : (isPaid ? 0 : Number(unit.monthlyRate) || 0);
+  const isPartial = unit.status === 'partial' || (paidAmount > 0 && pendingAmount > 0);
   const isOverdue = unit.status === 'overdue';
-
-  const pendingAmount = unit.pendingBalance !== undefined ? unit.pendingBalance : (isPaid ? 0 : unit.monthlyRate);
-  const paidAmount = unit.paidAmount || 0;
 
   const handleWhatsAppReminder = (e) => {
     e.stopPropagation();

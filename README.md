@@ -1,5 +1,9 @@
 # Sewerage Collection PWA (Ajman, UAE) 🇦🇪
 
+[![Live Demo](https://img.shields.io/badge/Live%20App-Visit%20Website-teal?style=for-the-badge&logo=pwa)](https://ahmadok12.github.io/Severage-Collection-App/)
+
+👉 **Live Demo**: [https://ahmadok12.github.io/Severage-Collection-App/](https://ahmadok12.github.io/Severage-Collection-App/)
+
 A modern, mobile-first Progressive Web App (PWA) tailored for landlords and property managers in Ajman, UAE to manage monthly sewerage fee collections, issue digital payment vouchers, send manual WhatsApp reminders, and track tenant recovery ledgers (Debit, Credit, and Balance style).
 
 ![Sewerage Collection App](public/icon.svg)
